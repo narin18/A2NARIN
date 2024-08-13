@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Implementing a Light/Dark Mode Switcher",
+        "date": "2024-08-12",
+        "content": "In this post, I explain how I implemented a light/dark mode switcher using JavaScript..."
+    },
+    {
+        "title": "Adding a Blog Section",
+        "date": "2024-08-12",
+        "content": "In this post, I describe the steps I took to dynamically load and display blog posts using JavaScript..."
+    }
+]
