@@ -8,8 +8,172 @@
 </head>
 <body>
     <div class="container">
-        <h1>Your Portfolio</h1>
-        <p>Welcome to my portfolio! Here you can find my work, blog, and more.</p>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        header nav ul li {
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        #introduction img {
+            max-width: 100%;
+            height: auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        #resume iframe {
+            width: 100%;
+            height: 500px;
+        }
+        #projects .project {
+            margin-bottom: 20px;
+        }
+        #projects .project img {
+            max-width: 100%;
+            height: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-top: 10px;
+        }
+        form input, form textarea, form button {
+            margin-top: 5px;
+        }
+        #social-media img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Home</a></li>
+                <li><a href="#biography">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello! I'm Narin!! I am big fan of arts, technology, music, litrature, and sports. In my free time I usually listen to music or watch movies. I like going out and spending time with my friends and learn from them. I am ambitious and I am working my way slowly towards my goals. </p>
+            <img src="narin.jpg" alt="Narin Slammy">
+        </section>
+
+        <section id="biography">
+            <h1>About Me</h1>
+            <p>I moved to canada almost 5 years ago. A couple months after we moved here covid came and we were in lockdown for almost 2 years. During that time I became very depressed and I wandted to go back to Iran. But after the lockdown things started getting more interesting. Right now, I am thankful for the life that I have. </p>
+            <h2>Education</h2>
+            <ul>
+                <li>Specialized Honours Bachelor of Information Technology - York University</li>
+                <li>Diploma - Northview S.S.</li>
+            </ul>
+            <h2>Skills</h2>
+            <ul>
+                <li>Computer programming (front & back end)</li>
+                <li>Visual Design</li>
+                <li>Sales & Market Strategy</li>
+                <li>CRM system User Flows</li>
+                <li>MS Office 365 (Word, PowerPoint, Excel, Outlook)</li>
+            </ul>
+            <h2>Languages</h2>
+            <ul>
+                <li>English</li>
+                <li>Farsi</li>
+                <li>Turkish</li>
+                <li>Azarbaijani</li>
+            </ul>
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <iframe src="resume.pdf" width="100%" height="500px"></iframe>
+            <button onclick="window.location.href='resume.pdf'">Download Resume</button>
+        </section>
+
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="project">
+                <img src="images/project1.jpg" alt="Project 1">
+                <h2>Project 1</h2>
+                <p>Description of Project 1.</p>
+                <a href="https://github.com/narinslammy/project1">View Repository</a>
+            </div>
+            <div class="project">
+                <img src="images/project2.jpg" alt="Project 2">
+                <h2>Project 2</h2>
+                <p>Description of Project 2.</p>
+                <a href="https://github.com/narinslammy/project2">View Repository</a>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h1>Blog</h1>
+            <p>Coming soon...</p>
+        </section>
+
+        <section id="contact">
+            <h1>Contact</h1>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="social-media">
+                <h2>Follow Me</h2>
+                <a href="https://linkedin.com/in/narinslammy"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/narinslammy"><img src="images/github.png" alt="GitHub"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Narin Slammy</p>
+    </footer>
+</body>
         <button id="theme-toggle" class="theme-toggle">Switch to Dark Mode</button>
         <a href="https://www.instagram.com/narinslammy/" target="_blank">Instagram</a>
         <a href="blog.html">Blog</a>
